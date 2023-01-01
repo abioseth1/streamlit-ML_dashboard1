@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-import plotly.express as px
+#import plotly.express as px
 import seaborn as sns
 st.set_option('deprecation.showPyplotGlobalUse', False)
 
@@ -28,15 +28,15 @@ st.pyplot()
 
 # Create a plot using Plotly Express
 st.subheader("Scatter view of species")
-fig = px.scatter(df, x=x_column, y=y_column, color="species")
+#fig = px.scatter(df, x=x_column, y=y_column, color="species")
 
 # Use Seaborn to create a pairplot
 st.subheader("Pairplot visualising the species")
 sns.pairplot(df, hue="species")
 
 # Display the plot and the pairplot in the Streamlit app
-st.plotly_chart(fig)
-st.pyplot()
+#st.plotly_chart(fig)
+#st.pyplot()
 
 # Display summary statistics
 st.subheader("Summary Statistics or description of data")
@@ -44,8 +44,8 @@ st.write(df.describe())
 
 # Create a bar plot
 st.subheader("Bar Plot")
-fig = px.bar(df, x="species", y=y_column)
-st.plotly_chart(fig)
+#fig = px.bar(df, x="species", y=y_column)
+#st.plotly_chart(fig)
 
 # Create a heatmap
 st.subheader("Heatmap")
