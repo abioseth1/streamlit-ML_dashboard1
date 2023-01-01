@@ -9,7 +9,7 @@ st.set_option('deprecation.showPyplotGlobalUse', False)
 df = pd.read_csv("https://raw.githubusercontent.com/mwaskom/seaborn-data/master/iris.csv")
 
 
-st.title("Exploratory Data Analysis of Iris dataset in streamlit web")
+st.title("Exploratory Data Analysis of Iris dataset on streamlit web")
 st.header("This app create simple interactive dashboard to explore iris dataset")
 
 #visualise the data in a table
