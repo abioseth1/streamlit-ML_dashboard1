@@ -31,7 +31,7 @@ st.subheader("3. Scatter view of species")
 fig = px.scatter(df, x=x_column, y=y_column, color="species")
 
 # Use Seaborn to create a pairplot
-st.subheader("4. Pairplot visualising the species")
+st.subheader("Pairplot visualising the species")
 sns.pairplot(df, hue="species")
 
 # Display the plot and the pairplot in the Streamlit app
